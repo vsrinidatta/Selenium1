@@ -6,7 +6,7 @@ package Assign;
 import org.testng.annotations.Test;
 
 /**
- * @author vsriniva   123
+ * @author vsriniva   1234
  *
  */
 public class AnotherTstNg {
