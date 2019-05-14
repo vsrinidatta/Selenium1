@@ -6,12 +6,11 @@ package Assign;
 import org.testng.annotations.Test;
 
 /**
- * @author vsriniva   12345
+ * @author vsriniva   1234567676
  *
  */
 public class AnotherTstNg {
 	
-	@Test (priority = 1, description = "Verify Login", enabled = false)
 	public void logIn() {
 		System.out.println("Login successful..");
 	}
