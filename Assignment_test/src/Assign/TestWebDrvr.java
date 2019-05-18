@@ -284,7 +284,7 @@ public class TestWebDrvr {
 		//Thread.sleep(1000);
 		//driver.quit();
 }
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test11() throws InterruptedException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -310,7 +310,7 @@ public class TestWebDrvr {
 		Thread.sleep(1000);
 		//driver.quit();
 }
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test12() throws InterruptedException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -338,4 +338,115 @@ public class TestWebDrvr {
 		//driver.quit();
 	}
 	
+	@Test(enabled = false)
+	public void test13() throws InterruptedException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getCustomVenueGroupKey(int,java.lang.String,int')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("customerId197")).sendKeys("1");
+		driver.findElement(By.name("vgDescription199")).sendKeys("72_CLUB_3_0_US");
+		driver.findElement(By.name("sourceId201")).sendKeys("1");
+		Thread.sleep(1000);
+		//driver.quit();
+		}
+	
+	@Test(enabled = true)
+	public void test14() throws InterruptedException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getCustomVGKeyWithCtry(int,java.lang.String,int,java.lang.String')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("customerId206")).sendKeys("0");
+		driver.findElement(By.name("vgDescription208")).sendKeys("LOS ANGELES");
+		driver.findElement(By.name("sourceId210")).sendKeys("1");
+		driver.findElement(By.name("ctryCode212")).sendKeys("US");
+		Thread.sleep(1000);
+		//driver.quit();
+	}
+	@Test(enabled = true)
+	public void test15() throws InterruptedException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getClusterDimKey(int,java.lang.String,int,java.lang.String')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("customerId217")).sendKeys("66");
+		driver.findElement(By.name("clusterDesc219")).sendKeys("TEST_CLSTR");
+		driver.findElement(By.name("sourceId221")).sendKeys("5");
+		driver.findElement(By.name("ctryCode223")).sendKeys("FR");
+		Thread.sleep(1000);
+		//driver.quit();
+	}
+	
+	@Test(enabled = true)
+	public void test16() throws InterruptedException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getClonedVGKey(int,java.lang.String,int,java.lang.String,java.lang.String')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId228")).sendKeys("0");
+		driver.findElement(By.name("venueGroupName230")).sendKeys("11_FOOD_5_0_US");
+		driver.findElement(By.name("sourceId232")).sendKeys("2");
+		driver.findElement(By.name("ctryCode234")).sendKeys("US");
+		driver.findElement(By.name("vgDisplayName236")).sendKeys("LOS ANGELES");
+		Thread.sleep(1000);
+		//driver.quit();
+	
+}
+	
+	@Test(enabled = true)
+	public void test17() throws InterruptedException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getClonedVGKey(int,java.lang.String,int,java.lang.String,java.lang.String')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId228")).sendKeys("0");
+		driver.findElement(By.name("venueGroupName230")).sendKeys("11_FOOD_5_0_US");
+		driver.findElement(By.name("sourceId232")).sendKeys("2");
+		driver.findElement(By.name("ctryCode234")).sendKeys("US");
+		driver.findElement(By.name("vgDisplayName236")).sendKeys("LOS ANGELES");
+		Thread.sleep(1000);
+		//driver.quit();
+	
+}
 }
