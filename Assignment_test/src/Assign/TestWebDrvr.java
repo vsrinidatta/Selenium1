@@ -6,9 +6,15 @@ package Assign;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -45,8 +51,9 @@ public class TestWebDrvr {
 	}
 	
 	@AfterMethod
-	public void tearDown() {
-		if (driver != null) 
+	public void tearDown() throws InterruptedException {
+		if (driver != null)
+			Thread.sleep(1000);
 			driver.quit();
 	}
 	
@@ -281,6 +288,7 @@ public class TestWebDrvr {
 		driver.findElement(By.name("timeKey148")).sendKeys("1756");
 		driver.findElement(By.name("hierarchyId150")).sendKeys("2");
 		driver.findElement(By.name("scheduleId152")).sendKeys("0");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		//Thread.sleep(1000);
 		//driver.quit();
 }
@@ -306,7 +314,7 @@ public class TestWebDrvr {
 		driver.findElement(By.name("posType167")).sendKeys("0");
 		driver.findElement(By.name("vgType169")).sendKeys("0");
 		driver.findElement(By.name("sourceId171")).sendKeys("0");
-			
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		Thread.sleep(1000);
 		//driver.quit();
 }
@@ -333,7 +341,7 @@ public class TestWebDrvr {
 		driver.findElement(By.name("vgType188")).sendKeys("STD");
 		driver.findElement(By.name("sourceId190")).sendKeys("2");
 		driver.findElement(By.name("ctryCode192")).sendKeys("US");
-			
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();	
 		Thread.sleep(1000);
 		//driver.quit();
 	}
@@ -355,11 +363,12 @@ public class TestWebDrvr {
 		driver.findElement(By.name("customerId197")).sendKeys("1");
 		driver.findElement(By.name("vgDescription199")).sendKeys("72_CLUB_3_0_US");
 		driver.findElement(By.name("sourceId201")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		Thread.sleep(1000);
 		//driver.quit();
 		}
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test14() throws InterruptedException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -377,10 +386,11 @@ public class TestWebDrvr {
 		driver.findElement(By.name("vgDescription208")).sendKeys("LOS ANGELES");
 		driver.findElement(By.name("sourceId210")).sendKeys("1");
 		driver.findElement(By.name("ctryCode212")).sendKeys("US");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		Thread.sleep(1000);
 		//driver.quit();
 	}
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test15() throws InterruptedException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -398,17 +408,15 @@ public class TestWebDrvr {
 		driver.findElement(By.name("clusterDesc219")).sendKeys("TEST_CLSTR");
 		driver.findElement(By.name("sourceId221")).sendKeys("5");
 		driver.findElement(By.name("ctryCode223")).sendKeys("FR");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		Thread.sleep(1000);
 		//driver.quit();
 	}
 	
 	@Test(enabled = true)
-	public void test16() throws InterruptedException {
-		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
-		//WebDriver driver = new ChromeDriver();
-		//driver.manage().window().maximize();
-		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
-		
+	public void test16() throws InterruptedException, IOException {
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
@@ -421,18 +429,23 @@ public class TestWebDrvr {
 		driver.findElement(By.name("sourceId232")).sendKeys("2");
 		driver.findElement(By.name("ctryCode234")).sendKeys("US");
 		driver.findElement(By.name("vgDisplayName236")).sendKeys("LOS ANGELES");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
 		Thread.sleep(1000);
 		//driver.quit();
 	
 }
 	
 	@Test(enabled = true)
-	public void test17() throws InterruptedException {
+	public void test17() throws InterruptedException, IOException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
 		//driver.manage().window().maximize();
 		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
-		
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
@@ -445,7 +458,12 @@ public class TestWebDrvr {
 		driver.findElement(By.name("sourceId232")).sendKeys("2");
 		driver.findElement(By.name("ctryCode234")).sendKeys("US");
 		driver.findElement(By.name("vgDisplayName236")).sendKeys("LOS ANGELES");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
 		Thread.sleep(1000);
+
 		//driver.quit();
 	
 }
