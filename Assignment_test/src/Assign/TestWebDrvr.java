@@ -836,7 +836,7 @@ public class TestWebDrvr {
 	
 }
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test28() throws InterruptedException, IOException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -860,5 +860,682 @@ public class TestWebDrvr {
 
 		//driver.quit();
 	
+}
+	@Test(enabled = false)
+	public void test29() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getFolderKey(java.lang.String,int,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("folderName493")).sendKeys("Milk - FOLDER1");
+		driver.findElement(By.name("clientId495")).sendKeys("5099");
+		driver.findElement(By.name("countryCode497")).sendKeys("US");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test30() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getVersionKey(java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("versionCode502")).sendKeys("FR01");
+		driver.findElement(By.name("countryCd504")).sendKeys("FR");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test31() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getCountryKey(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("countryCodeTx509")).sendKeys("DE");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test32() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getOutletKey(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("outletTypeCd514")).sendKeys("CONV");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test33() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getOutletKeyWithCtry(java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("outletTypeCd519")).sendKeys("HDFR");
+		driver.findElement(By.name("ctryCode521")).sendKeys("FR");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test34() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getSubOutletKey(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("subOutletTypeCode526")).sendKeys("SHR");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test35() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getMethodKey(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("projectionMethodCd531")).sendKeys("PLAT");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test36() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getProjectSetKey(int,int,int,int,int,int,int,int)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientID536")).sendKeys("0");
+		driver.findElement(By.name("versionKey538")).sendKeys("6");
+		driver.findElement(By.name("countryKey540")).sendKeys("1");
+		driver.findElement(By.name("methodKey542")).sendKeys("1");
+		driver.findElement(By.name("serviceKey544")).sendKeys("0");
+		driver.findElement(By.name("outletKey546")).sendKeys("80");
+		driver.findElement(By.name("subOutletKey548")).sendKeys("1");
+		driver.findElement(By.name("categoryKey550")).sendKeys("9077092");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test37() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getPtotDualKey(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("dualKeyDesc555")).sendKeys("CLOROX|106086320|204216977|204211585|204273526|204363128");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test38() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getModelKey(java.lang.String,java.lang.Integer)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("modelNameTx565")).sendKeys("TILLAMOOK_MARKET_ADVANTAGE");
+		driver.findElement(By.name("solutionKey567")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test39() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getDeliveryKey(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("deliveryNameTx572")).sendKeys("619_1_20_0_53_3");
+		driver.findElement(By.name("clientKey574")).sendKeys("619");
+		driver.findElement(By.name("solutionKey576")).sendKeys("1");
+		driver.findElement(By.name("verionCd578")).sendKeys("20_0");
+		driver.findElement(By.name("modelKey580")).sendKeys("53");
+		driver.findElement(By.name("phaseNumber582")).sendKeys("3");
+		driver.findElement(By.name("ccrText584")).sendKeys("2722");
+		driver.findElement(By.name("workOrderId586")).sendKeys("2710");
+		driver.findElement(By.name("workOrderName588")).sendKeys("FERRERO_MARKET_ADVANTAGE_60_18_20_0_PHASE_03");
+		driver.findElement(By.name("deliveryDate590")).sendKeys("07/03/2016");
+		driver.findElement(By.name("remark592")).sendKeys("OMS Work-Order for CCRs: 2722[ChangeList: Measures:No,Time:No,ProjectedVenueGroups:No,CustomVenueGroups:No,RetailerBanner-Hierarchies:No,RetailerBanner-MemberSelections:No,StoreClusters:No,SyndicatedProducts:No,ProductHierarchy-Definition:No,ProductHierarchy-LevelGroups:No,ProductTotals:No,CustomProductAttribute-Definition:Yes,CustomProductAttribute-DimensionHierarchies:No,CustomProductAttribute-StubList:No,CustomSortDefinition:No,CustomVolumeEquivalency:No,UserGroupRestr-ConfiguredLDAPGroups:No,UserGroupRestr-RestrictionPatterns:No,UserGroupRestr-DimensionRestrictions:No]");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test40() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getItemAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attrName597")).sendKeys("BRAND");
+		driver.findElement(By.name("countryCode599")).sendKeys("US");
+		driver.findElement(By.name("AttributeNameUS601")).sendKeys("BRAND");
+		driver.findElement(By.name("userName603")).sendKeys("MDMADMIN");
+		driver.findElement(By.name("keyedFacetValue605")).sendKeys("Y");
+		driver.findElement(By.name("dataTypeFacetValue607")).sendKeys("TEXT");
+		driver.findElement(By.name("uomFacetValue609")).sendKeys("N");
+		driver.findElement(By.name("serviceType611")).sendKeys("R");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+	
+	
+}
+	@Test(enabled = false)
+	public void test41() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getJobStatus(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("jobLogId662")).sendKeys("2530963");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test42() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeDefinition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attrDefId678")).sendKeys("32148");
+		driver.findElement(By.name("sourceName680")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName682")).sendKeys("ISVDS");
+		driver.findElement(By.name("actionType684")).sendKeys("LOCK");
+		driver.findElement(By.name("serviceType686")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+	
+}
+	@Test(enabled = false)
+	public void test43() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeDefinition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attrDefId678")).sendKeys("32148");
+		driver.findElement(By.name("sourceName680")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName682")).sendKeys("ISVDS");
+		driver.findElement(By.name("actionType684")).sendKeys("RELS");
+		driver.findElement(By.name("serviceType686")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test44() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeDefinition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attrDefId678")).sendKeys("32148");
+		driver.findElement(By.name("sourceName680")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName682")).sendKeys("ISVDS");
+		driver.findElement(By.name("actionType684")).sendKeys("RELS");
+		driver.findElement(By.name("serviceType686")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test45() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attributeGroupId701")).sendKeys("718320");
+		driver.findElement(By.name("sourceName702")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName703")).sendKeys("ISVDS");
+		driver.findElement(By.name("queueType706")).sendKeys("NIU");
+		driver.findElement(By.name("actionType704")).sendKeys("LOCK");
+		driver.findElement(By.name("serviceType705")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test46() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attributeGroupId701")).sendKeys("718320");
+		driver.findElement(By.name("sourceName702")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName703")).sendKeys("ISVDS");
+		driver.findElement(By.name("queueType706")).sendKeys("NIU");
+		driver.findElement(By.name("actionType704")).sendKeys("RELS");
+		driver.findElement(By.name("serviceType705")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test47() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attributeGroupId701")).sendKeys("124621");
+		driver.findElement(By.name("sourceName702")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName703")).sendKeys("ISVDS");
+		driver.findElement(By.name("queueType706")).sendKeys("EIU");
+		driver.findElement(By.name("actionType704")).sendKeys("LOCK");
+		driver.findElement(By.name("serviceType705")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test48() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("attributeGroupId701")).sendKeys("124621");
+		driver.findElement(By.name("sourceName702")).sendKeys("CUSTOM ATTRIBUTE");
+		driver.findElement(By.name("userName703")).sendKeys("ISVDS");
+		driver.findElement(By.name("queueType706")).sendKeys("EIU");
+		driver.findElement(By.name("actionType704")).sendKeys("RELS");
+		driver.findElement(By.name("serviceType705")).sendKeys("W");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test49() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getAttributeNames(java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId676")).sendKeys("65");
+		driver.findElement(By.name("countryCd677")).sendKeys("1");
+		driver.findElement(By.name("dimId678")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test50() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getClientAttributeValues(java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId687")).sendKeys("3");
+		driver.findElement(By.name("attributeId689")).sendKeys("308");
+		driver.findElement(By.name("countryId690")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+
+	@Test(enabled = false)
+	public void test51() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getAttributeColumKey(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId705")).sendKeys("25");
+		driver.findElement(By.name("sourceId706")).sendKeys("9");
+		driver.findElement(By.name("hierarchyId707")).sendKeys("0");
+		driver.findElement(By.name("attributeId708")).sendKeys("358");
+		driver.findElement(By.name("serviceType709")).sendKeys("R");
+		driver.findElement(By.name("dimId710")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = false)
+	public void test52() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getClientVGHFSuperFolder(java.lang.String,java.lang.String,java.lang.String, java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("clientId778")).sendKeys("65");
+		driver.findElement(By.name("countryId779")).sendKeys("1");
+		driver.findElement(By.name("version780")).sendKeys("20.0");
+		driver.findElement(By.name("model780")).sendKeys("POS");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
+}
+	@Test(enabled = true)
+	public void test53() throws InterruptedException, IOException {
+		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		//driver.manage().window().maximize();
+		//driver.get("http://10.106.40.23:9000/MDMKeyService/jsp/client/TestClient.jsp");
+		String pattern = "yyyy-MM-dd_HH-mm-ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("methods")));
+		driver.findElement(By.xpath(
+				"//a[contains(text(),'getVGMasterfileNames(java.lang.String)')]"))
+				.click();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(driver.findElement(By.name("inputs")));
+		driver.findElement(By.name("countryId780")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//Copy the  screenshot to desired location using copyFile method
+        FileUtils.copyFile(src, new File("D:\\Selenium\\screenshot1["+simpleDateFormat.format(new Date())+"].jpg"));
+		Thread.sleep(1000);
+
+		//driver.quit();
 }
 }
