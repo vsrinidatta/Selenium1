@@ -176,9 +176,7 @@ public class TestWebDrvr {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
-		driver.findElement(By.xpath(
-				"//a[contains(text(),'getAddressKey(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int')]"))
-				.click();
+		driver.findElement(By.xpath("//a[contains(text(),'getAddressKey(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int')]")).click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
 		driver.findElement(By.name("legacySeqKey88")).sendKeys("970276");
@@ -234,9 +232,7 @@ public class TestWebDrvr {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
-		driver.findElement(By.xpath(
-				"//a[contains(text(),'getAddressKeyWithStzd(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,boolean')]"))
-				.click();
+		driver.findElement(By.xpath("//a[contains(text(),'getAddressKeyWithStzd(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,boolean)')]")).click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
 		driver.findElement(By.name("legacySeqKey103")).sendKeys("970276");
@@ -248,7 +244,7 @@ public class TestWebDrvr {
 		driver.findElement(By.name("zipPlus4115")).sendKeys("3615");
 		driver.findElement(By.name("sourceId117")).sendKeys("1");
 		driver.findElement(By.name("ctryCode119")).sendKeys("US");
-		driver.findElement(By.name("isStandardized121")).sendKeys("true");
+		driver.findElement(By.name("isStandardized121")).sendKeys("false");
 		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//Copy the  screenshot to desired location using copyFile method
@@ -266,9 +262,7 @@ public class TestWebDrvr {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
-		driver.findElement(By.xpath(
-				"//a[contains(text(),'getAddressKeyWithCtry(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String')]"))
-				.click();
+		driver.findElement(By.xpath("//a[contains(text(),'getAddressKeyWithCtry(long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String')]")).click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
 		driver.findElement(By.name("legacySeqKey126")).sendKeys("970276");
@@ -405,7 +399,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getCustomVenueGroupKey(int,java.lang.String,int')]"))
+				"//a[contains(text(),' getCustomVenueGroupKey(int,java.lang.String,int')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -660,7 +654,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getItemKeywithCUT(short,int,int,short,java.lang.String,int,short,java.lang.String)')]"))
+				"//a[contains(text(),' getItemKeywithCUT(short,int,int,short,java.lang.String,int,short,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -695,14 +689,10 @@ public class TestWebDrvr {
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
-		driver.findElement(By.name("system329")).sendKeys("0");
-		driver.findElement(By.name("vendor331")).sendKeys("0");
-		driver.findElement(By.name("item333")).sendKeys("0");
-		driver.findElement(By.name("generation335")).sendKeys("0");
-		driver.findElement(By.name("ctryCode337")).sendKeys("US");
-		driver.findElement(By.name("sourceId339")).sendKeys("22");
-		driver.findElement(By.name("clientId341")).sendKeys("7145");
-		driver.findElement(By.name("altKeyTx343")).sendKeys("WYF078277466499~STAPLES~011");
+		driver.findElement(By.name("altDimKey348")).sendKeys("0");
+		driver.findElement(By.name("slinNum350")).sendKeys("0");
+		driver.findElement(By.name("ctryCode352")).sendKeys("0");
+		driver.findElement(By.name("sourceId354")).sendKeys("0");
 		driver.findElement(By.xpath("//input[@value='Invoke']")).click();
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//Copy the  screenshot to desired location using copyFile method
@@ -722,7 +712,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getBasketAttrKey(long,long,long,long,long)')]"))
+				"//a[contains(text(),' getBasketAttrKey(long,long,long,long,long)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -750,7 +740,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getAVPKeyWithDim(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' getAVPKeyWithDim(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -812,15 +802,15 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getAVPKeyWithAttrValue(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' getAVPKeyWithAttrValue(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
 		driver.findElement(By.name("attrName465")).sendKeys("VOLUME EQUIVALENCY VALUE");
-		driver.findElement(By.name("attrValue467")).sendKeys("99");
-		driver.findElement(By.name("smAttrValue469")).sendKeys("99");
-		driver.findElement(By.name("mdAttrValue471")).sendKeys("99");
-		driver.findElement(By.name("lgAttrValue473")).sendKeys("99");
+		driver.findElement(By.name("attrValue467")).sendKeys("32");
+		driver.findElement(By.name("smAttrValue469")).sendKeys("32");
+		driver.findElement(By.name("mdAttrValue471")).sendKeys("32");
+		driver.findElement(By.name("lgAttrValue473")).sendKeys("32");
 		driver.findElement(By.name("attrValueType475")).sendKeys("NUMERIC");
 		driver.findElement(By.name("uom477")).sendKeys("ML");
 		driver.findElement(By.name("dimension479")).sendKeys("ITEM");
@@ -872,7 +862,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getFolderKey(java.lang.String,int,java.lang.String)')]"))
+				"//a[contains(text(),' getFolderKey(java.lang.String,int,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -898,7 +888,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getVersionKey(java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' getVersionKey(java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -1158,7 +1148,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getItemAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' getItemAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -1244,7 +1234,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'lockItemAttributeDefinition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' lockItemAttributeDefinition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -1300,7 +1290,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -1329,7 +1319,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
+				"//a[contains(text(),' lockItemAttributeGroupForAIMS(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
@@ -1514,7 +1504,7 @@ public class TestWebDrvr {
 
 		//driver.quit();
 }
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void test53() throws InterruptedException, IOException {
 		//System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
@@ -1525,7 +1515,7 @@ public class TestWebDrvr {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("methods")));
 		driver.findElement(By.xpath(
-				"//a[contains(text(),'getVGMasterfileNames(java.lang.String)')]"))
+				"//a[contains(text(),' getVGMasterfileNames(java.lang.String)')]"))
 				.click();
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.name("inputs")));
